@@ -18,7 +18,7 @@ services:
 
   deluge:
     container_name: deluge
-    image: linuxserver/deluge:latest
+    image: linuxserver/deluge
     restart: unless-stopped
     network_mode: service:vpn # run on the vpn network
     environment:
@@ -31,7 +31,7 @@ services:
 
   jackett:
     container_name: jackett
-    image: linuxserver/jackett:latest
+    image: linuxserver/jackett
     restart: unless-stopped
     network_mode: host
     environment:
